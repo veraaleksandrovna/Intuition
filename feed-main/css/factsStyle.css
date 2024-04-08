@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+ .wrapper {
+    width: auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+
+ }
+body {
+  transition: background-color 0.4s;
+  background-color: #212529;
+  background-image: url('../people/bckgr.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  /*font-family: 'Comfortaa', sans-serif;*/
+font-family: 'Wix Madefor Display', sans-serif;
+  /*font-family: 'Russo One', sans-serif;*/
+ /*font-family: 'Comfortaa', sans-serif;*/
+ text-align: center;
+}
+  .content {
+          display: flex;
+     flex-wrap: wrap;
+     /*padding: 5px;*/
+     border-radius: 30px;
+     /*box-shadow: 0 15px 30px rgb(0 0 0 / 80%);*/
+     margin: 20px 5px;
+     overflow: hidden;
+     justify-content: center;
+         padding: 5px;
+         }
+
+.column {
+  max-width: 100%;
+  flex: 0 0 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  transition: all 0.2s ease;
+  background: #d2d5d8;
+  border:0;
+  font-weight: bold;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  outline: none;
+  padding: 3px;
+  cursor: pointer;
+  min-width: 200px;
+  animation-name: button;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn-text {
+  color: #333;
+  font-size: 25px;
+  line-height: 1.2rem;
+  opacity: 1;
+  animation-name: button-text;
+  animation-duration: 0.75s;
+  animation-delay: 1.3s;
+  animation-fill-mode: backwards;
+}
+
+button:before,
+button:after,
+button span:before,
+button span:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+button:before {
+/*   box-shadow: -10px -8px 20px #fff; */
+  animation-name: button-before;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+button:after {
+/*   box-shadow: 10px 8px 20px #9496B0; */
+  animation-name: button-after;
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn-inner {
+  width: 500px;
+  height: 100px;
+  position: relative;
+  background: #d2d5d8;
+/*   background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%); */
+  padding: 1rem 4rem;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  animation-name: button-inner;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+button.active .btn-text {
+  font-size: 50px;
+}
+
+button.active .btn-inner:before {
+   box-shadow: 4px 4px 10px inset #9496B0;
+  -webkit-box-shadow: 4px 4px 10px inset #9496B0;
+}
+
+button.active .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #fff;
+  -webkit-box-shadow: -4px -4px 10px inset #fff;
+}
+
+@keyframes button-before {
+  from {box-shadow: 0 0 0 #fff;}
+  to {box-shadow: -10px -8px 20px #fff;}
+}
+
+@keyframes button-after {
+  from {box-shadow: 0 0 0 #9496B0;}
+  to {box-shadow: 10px 8px 20px #9496B0;}
+}
+
+@keyframes button-inner {
+  from {background: #d2d5d8;}
+  to {background: linear-gradient(165deg, rgba(0, 0, 198, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);}
+}
+
+@keyframes button {
+  from {background: #d2d5d8;}
+  to {background: linear-gradient(165deg, rgba(255,255,255,1) 10%, rgba(148,150,176,1) 100%);}
+}
+
+@keyframes button-text {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

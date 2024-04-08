@@ -1,0 +1,241 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+ .wrapper {
+    width: auto;
+    height: 103%;
+    background: rgba(0, 0, 0, 0.75);
+ }
+
+.main {
+     dispaly: flex;
+     margin-top: 300px;
+}
+
+.logo-main {
+    width: 100%;
+    display: center
+     position: relative;
+     position: relative;
+     overflow: hidden;
+}
+
+ .main {
+   background-image: url('../people/bckgr.png');
+        position: relative;
+ }
+ 
+.header {
+    /*text-align: center !important;
+     display: block !important;*/
+    /*display: flex !important;*/
+    /*flex-direction: column !important;*/
+    padding-top: 30px;
+    /*background: linear-gradient(to bottom, #212529, rgba(0, 0, 0, 0) 55px);*/
+    /*background: linear-gradient(to bottom, #212529, rgba(0, 0, 0, 0) 70px);*/
+  padding-bottom: 0px;*/
+} 
+
+   .logo_mobile img {
+        //height: 200%;
+        width: 600%;
+        /*max-width:105px;*/
+    }
+
+.big {
+  font-size: 1.2em;
+}
+
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: center;
+  vertical-align: middle;
+  /*margin-: 20px; /* demo only */
+}
+
+.custom-dropdown select {
+  background: linear-gradient(to bottom right, rgba(19, 19, 233, 0.9), rgba(171, 2, 247, 0.9));
+  background-color: rgba(48, 8, 136, 1);
+
+  height: auto;
+  width: 60%;
+  color: #FFF;
+  white-space: pre-wrap;
+  font-size: 25px;
+  font-weight: bold;
+  /*font-family: 'Russo One', sans-serif;*/
+  padding: 5px;
+  box-shadow: 0px 5px 30px 0px rgba(107, 0, 255, 0.3);
+  margin: 5px;
+  padding-right:15px;
+  padding-left: 25px;
+  padding-top:15px;
+  padding-bottom:15px;
+  border-radius: 10px;
+  text-indent: 0.01px;
+  text-overflow: 'ФАКТ';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  appearance:none;
+}
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+.custom-dropdown::before {
+  background-color: rgba(0,0,0,.15);
+}
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
+}
+select::-ms-expand {
+    display: none;
+}
+
+body {
+  transition: background-color 0.4s;
+  background-color: #212529;
+  background-image: url('../people/bckgr.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  /*font-family: 'Comfortaa', sans-serif;*/
+font-family: 'Wix Madefor Display', sans-serif;
+  /*font-family: 'Russo One', sans-serif;*/
+ /*font-family: 'Comfortaa', sans-serif;*/
+ text-align: center;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #ffb900;
+    margin: 10px 0;
+    }
+
+ .content {
+         display: flex;
+    flex-wrap: wrap;
+    /*padding: 5px;*/
+    border-radius: 30px;
+    /*box-shadow: 0 15px 30px rgb(0 0 0 / 80%);*/
+    margin: 20px 5px;
+    overflow: hidden;
+    justify-content: center;
+        padding: 5px;
+        }
+
+
+ .post {
+     width: calc(20% - 10px);
+     /*width: calc(48.8%);*/
+      margin: 5px;
+      border: 1px solid #ccc;
+       text-align: center;
+       cursor: pointer;
+      /*transition: flex-grow 0.3s;*/
+       position: relative;
+       box-shadow: 0px 5px 30px 0px rgba(107, 0, 255, 0.0);
+    border-radius: 10px;
+    overflow: hidden;
+   }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+
+/* Для экранов шириной от 1025px до 1366px (например, ноутбуки) */
+/*@media screen and (min-width: 1025px) and (max-width: 1366px) {*/
+@media screen and (min-width: 1025px) {
+    .logo_mobile img {
+        max-width: 21%;
+        /*max-width:105px;*/
+    }
+
+  .post {
+    width: calc(15% - 20px);
+    height: 240px;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+ box-shadow: 0px 5px 30px 0px rgba(107, 0, 255, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+   }
+
+.poster-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px 5px 10px;
+ background-color: rgba(0, 0, 0, 0.64);
+  /*box-shadow: 0px 0px 100px 50px rgb(0 0 0 / 80%);*/
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        font-weight: bold;
+font-family: 'Russo One', sans-serif;
+    }
+
+}
