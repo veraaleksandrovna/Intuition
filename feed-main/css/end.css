@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+ .wrapper {
+    width: auto;
+    height: 100%;
+
+ }
+body {
+  transition: background-color 0.4s;
+  background-color: #212529;
+  background-image: url('../people/bckgr_light.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  /*font-family: 'Comfortaa', sans-serif;*/
+font-family: 'Wix Madefor Display', sans-serif;
+  /*font-family: 'Russo One', sans-serif;*/
+ /*font-family: 'Comfortaa', sans-serif;*/
+ text-align: center;
+}
+  .content {
+          display: flex;
+     flex-wrap: wrap;
+     /*padding: 5px;*/
+     border-radius: 30px;
+     /*box-shadow: 0 15px 30px rgb(0 0 0 / 80%);*/
+     overflow: hidden;
+     justify-content: center;
+         padding: 5px;
+  }
+
+  .main {
+    margin-top: 100px;
+    }

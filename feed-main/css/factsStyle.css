@@ -165,6 +165,7 @@ button.active .btn-inner:before {
   -webkit-box-shadow: 4px 4px 7px inset #311169;
 }
 
+
 button.active .btn-inner:after {
   box-shadow: -4px -4px 7px inset #311169;
  */
@@ -203,3 +204,6 @@ button.active .btn-inner:after {
   from {opacity: 0;}
   to {opacity: 1;}
 }*/
+.link {
+color: #1B058B;
+}
