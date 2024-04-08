@@ -12,9 +12,11 @@
           rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        function replace(image) {
-        image.src = "people/sticker2.png";
-        }
+        var buttons = document.getElementsByClassName("btn-inner");
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function() {
+        this.style.backgroundColor = "rgba(120, 120, 139, 1)";
     </script>
 </head>
 <body>
@@ -22,44 +24,49 @@
     <div class="content">
         <div class = "column"><button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text" >Работала на ОНТ</span>
         </span>
         </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Профессионально сделает химчистку машины</span>
         </span>
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Гасила известь на растущую луну</span>
         </span>
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">В 25 лет написала книгу</span>
         </span>
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Нашла сестру через ЖДИ МЕНЯ</span>
         </span>
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Был по локоть в крови спасая человека</span>
         </span>
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">В детстве был моделью белорусского трикотажа</span>
         </span>
             </button>
         </div>
         <div class = "column">
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Однажды умение организовывать пьянки чуть не стоило ему места в общаге</span>
+        </span>
+            </button>
+            <button>
+            <span class="btn-inner">
+            <span class="btn-text">Поймала щуку на 1 кг</span>
         </span>
             </button>
             <button>
@@ -69,7 +76,7 @@
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Был по локоть в крови спасая человека, но стал  разработчиком приложения, а не врачом</span>
         </span>
             </button>
             <button>
@@ -79,12 +86,7 @@
             </button>
             <button>
             <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
-        </span>
-            </button>
-            <button>
-            <span class="btn-inner">
-            <span class="btn-text">Профессионально сделает химчистку машины и поставит задачу на банк </span>
+            <span class="btn-text">Был по локоть в крови спасая человека, но стал разработчиком приложения, а не врачом</span>
         </span>
             </button>
             <button>
@@ -100,22 +102,8 @@
         </div>
         </div>
     </div>
-<script src="js/advanced mode.js" type="text/javascript"></script>
-<script src="js/expand description.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
 <script src="js/pagination.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://telegram.org/js/telegram-web-app.js"></script>
-<script type="text/javascript">
-    let tg = window.Telegram.WebApp;
-      // Получение ссылки на видеоплеер
-      //const videoPlayer = document.getElementById('play');
-      tg.expand()
-// tg.enterFullscreen();
-      // Регистрация обработчика события на кнопку полноэкранного режима
-     // videoPlayer.addEventListener('click', () => {
-          // Запрос на полноэкранный режим
-        // tg.enterFullscreen();
-          // TelegramWebApp.enterFullscreen();
-     // });
-</script>
 </body>
 </html>

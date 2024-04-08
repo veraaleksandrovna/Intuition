@@ -39,13 +39,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
  .wrapper {
     width: auto;
     height: 100%;
-    background: rgba(0, 0, 0, 0.55);
 
  }
 body {
   transition: background-color 0.4s;
   background-color: #212529;
-  background-image: url('../people/bckgr.png');
+  background-image: url('../people/bckgr_dark.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +61,6 @@ font-family: 'Wix Madefor Display', sans-serif;
      /*padding: 5px;*/
      border-radius: 30px;
      /*box-shadow: 0 15px 30px rgb(0 0 0 / 80%);*/
-     margin: 20px 5px;
      overflow: hidden;
      justify-content: center;
          padding: 5px;
@@ -74,12 +72,12 @@ font-family: 'Wix Madefor Display', sans-serif;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 button {
   transition: all 0.2s ease;
-  background: #d2d5d8;
+  background: #6b57bd;
   border:0;
   font-weight: bold;
   margin: 2rem auto;
@@ -87,9 +85,10 @@ button {
   border-radius: 25px;
   position: relative;
   outline: none;
-  padding: 3px;
+  padding: 5px;
   cursor: pointer;
-  min-width: 200px;
+  width: 700px;
+  height: 400px
   animation-name: button;
   animation-duration: 0.75s;
   animation-delay: 1s;
@@ -97,10 +96,12 @@ button {
 }
 
 .btn-text {
-  color: #333;
-  font-size: 25px;
-  line-height: 1.2rem;
-  opacity: 1;
+  text-align: center;
+  color: rgba(246, 246, 255, 1);
+  font-size: 23px;
+  line-height: 2rem;
+  opacity: 5;
+  word-break: break-all;
   animation-name: button-text;
   animation-duration: 0.75s;
   animation-delay: 1.3s;
@@ -120,16 +121,16 @@ button span:after{
   left: 0;
   border-radius: 25px;
 }
-button:before {
-/*   box-shadow: -10px -8px 20px #fff; */
+/*button:before {
+*//*   box-shadow: -10px -8px 20px #fff; *//*
   animation-name: button-before;
-  animation-duration: 0.75s;
+  animation-duration: 60s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-}
+}*/
 
 button:after {
-/*   box-shadow: 10px 8px 20px #9496B0; */
+  box-shadow: 10px 8px 20px #9496B0;
   animation-name: button-after;
   animation-duration: 0.3s;
   animation-delay: 1s;
@@ -137,11 +138,12 @@ button:after {
 }
 
 .btn-inner {
-  width: 500px;
-  height: 100px;
+  display: block;;
+  width: 100%;
+  height: 100%;
   position: relative;
-  background: #d2d5d8;
-/*   background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%); */
+  background: #6b57bd;
+/*   background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%);*/
   padding: 1rem 4rem;
   display: block;
   border-radius: 25px;
@@ -157,34 +159,35 @@ button.active .btn-text {
 }
 
 button.active .btn-inner:before {
-   box-shadow: 4px 4px 10px inset #9496B0;
-  -webkit-box-shadow: 4px 4px 10px inset #9496B0;
+   box-shadow: 4px 4px 7px inset #551db5;
+  -webkit-box-shadow: 4px 4px 7px inset #551db5;
 }
 
 button.active .btn-inner:after {
-  box-shadow: -4px -4px 10px inset #fff;
-  -webkit-box-shadow: -4px -4px 10px inset #fff;
+  box-shadow: -4px -4px 7px inset #935df0;
+ /* -webkit-box-shadow: -4px -4px 7px inset #935df0;*/
 }
 
 @keyframes button-before {
-  from {box-shadow: 0 0 0 #fff;}
-  to {box-shadow: -10px -8px 20px #fff;}
+  from {box-shadow: 0 0 0 #935df0;}
+ /* to {box-shadow: -10px -8px 7px #935df0;}*/
 }
 
 @keyframes button-after {
-  from {box-shadow: 0 0 0 #9496B0;}
-  to {box-shadow: 10px 8px 20px #9496B0;}
+  from {box-shadow: 0 0 0 #935df00;}
+  to {box-shadow: 10px 8px 5px #551db5;}
 }
 
+/**ЦВЕТ КНОПКИ*/
 @keyframes button-inner {
   from {background: #d2d5d8;}
-  to {background: linear-gradient(165deg, rgba(0, 0, 198, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);}
+  to {background: linear-gradient(165deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);}
 }
 
-@keyframes button {
+/*@keyframes button {
   from {background: #d2d5d8;}
   to {background: linear-gradient(165deg, rgba(255,255,255,1) 10%, rgba(148,150,176,1) 100%);}
-}
+}*/
 
 @keyframes button-text {
   from {opacity: 0;}
