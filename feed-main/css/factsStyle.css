@@ -88,7 +88,7 @@ button {
   padding: 5px;
   cursor: pointer;
   width: 700px;
-  height: 400px
+  height: 89px;
   animation-name: button;
   animation-duration: 0.75s;
   animation-delay: 1s;
@@ -97,10 +97,11 @@ button {
 
 
 .btn-text {
+  display: center;
   text-align: center;
   color: rgba(246, 246, 255, 1);
-  font-size: 23px;
-  line-height: 2rem;
+  font-size: 25px;
+  line-height: 1.7rem;
   opacity: 5;
   word-break: break-all;
   animation-name: button-text;
@@ -147,15 +148,13 @@ button:hover:before {
 }*/
 
 .btn-inner {
-  display: block;;
+  display: block;
   width: 100%;
   height: 100%;
-  position: relative;
 /*  background: #6b57bd;*/
   background: linear-gradient(165deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);
 /*   background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%);*/
   padding: 1rem 4rem;
-  display: block;
   border-radius: 25px;
   position: relative;
   animation-name: button-inner;
@@ -169,7 +168,7 @@ color: #341973;
 }
 
 
-button.active .btn-inner:before {
+/*button.active .btn-inner:before {
    box-shadow: 4px 4px 7px inset #311169;
   -webkit-box-shadow: 4px 4px 7px inset #311169;
 }
@@ -177,7 +176,7 @@ button.active .btn-inner:before {
 
 button.active .btn-inner:after {
   box-shadow: -4px -4px 7px inset #311169;
- */
+}*/
 /* -webkit-box-shadow: -4px -4px 7px inset #935df0;*//*
 
 }
@@ -192,25 +191,6 @@ button.active .btn-inner:after {
   to {box-shadow: 10px 8px 5px #551db5;}
 }
 
-
-/**ЦВЕТ КНОПКИ*//*
-
-@keyframes button-inner {
-  from {background: #d2d5d8;}
-  to {background: linear-gradient(165deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);}
-}
-
-*/
-/*@keyframes button {
-  from {background: #d2d5d8;}
-  to {background: linear-gradient(165deg, rgba(255,255,255,1) 10%, rgba(148,150,176,1) 100%);}
-}*//*
-
-
-@keyframes button-text {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}*/
 .link {
 color: #1B058B;
 }
