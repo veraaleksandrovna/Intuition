@@ -77,7 +77,7 @@ font-family: 'Wix Madefor Display', sans-serif;
 
 button {
   transition: all 0.2s ease;
-  border:0;
+  border: 3px;
   background: linear-gradient(165deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 198, 0.8) 50%, rgba(98, 11, 160, 0.8) 95%, rgba(98, 11, 216, 0.8) 100%);
   font-weight: bold;
   margin: 2rem auto;
@@ -94,6 +94,7 @@ button {
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
+
 
 .btn-text {
   text-align: center;
@@ -121,21 +122,29 @@ button span:after{
   left: 0;
   border-radius: 25px;
 }
-/*button:before {
-*//*   box-shadow: -10px -8px 20px #fff; *//*
+
+button:before {
+   box-shadow: -5px -5px 5px rgba(146, 34, 241, 0.8);
   animation-name: button-before;
   animation-duration: 60s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-}*/
+}
 
-button:after {
+button:hover:before {
+ /*box-shadow: -8px -8px 10px 10px rgba(189, 33, 253, 0.81);
+  border:5px;
+  border-color: rgba(125, 1, 176, 0.58);*/
+  background: rgba(193, 49, 241, 0.93);
+}
+
+/*button:after {
   box-shadow: 7px 8px 7px #32344a;
   animation-name: button-after;
-/*  animation-duration: 5s;
-  animation-delay: 30s;*/
+*//*  animation-duration: 5s;
+  animation-delay: 30s;*//*
   animation-fill-mode: forwards;
-}
+}*/
 
 .btn-inner {
   display: block;;
@@ -172,20 +181,18 @@ button.active .btn-inner:after {
 /* -webkit-box-shadow: -4px -4px 7px inset #935df0;*//*
 
 }
-/*
 @keyframes button-before {
-  from {box-shadow: 0 0 0 #935df0;}
- */
-/* to {box-shadow: -10px -8px 7px #935df0;}*//*
+  from {box-shadow: 0 0 0 rgba(146, 34, 241, 0.8);}
+ to {box-shadow: -10px -8px 7px rgba(146, 34, 241, 0.8);}*//*
 
 }
-
+*/
 @keyframes button-after {
   from {box-shadow: 0 0 0 #935df00;}
   to {box-shadow: 10px 8px 5px #551db5;}
 }
 
-*/
+
 /**ЦВЕТ КНОПКИ*//*
 
 @keyframes button-inner {
