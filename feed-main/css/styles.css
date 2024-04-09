@@ -249,7 +249,7 @@ font-family: 'Russo One', sans-serif;
     transition: 1s ease;
     }*/
     .post :hover{
-        -webkit-transform:  border: 10px solid rgba(193, 21, 250, 0.93);
+/*        -webkit-transform:  border: 10px solid rgba(193, 21, 250, 0.93);*/
        /* -ms-transform: scale(1.2);*/
          border: 10px solid rgba(193, 21, 250, 0.93);
        /* transition: 1s ease;*/
